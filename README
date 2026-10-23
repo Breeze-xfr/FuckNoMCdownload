@@ -3,24 +3,34 @@
 ----
 使用方法
 ----
-请将名为"HMCL-*.jar"的文件放入该目录
-并运行FNMCD.sh(请注意，该操作会直接禁用HMCL的更新):
+macOS/Linux
+1.打开终端模拟器
+2.git clone https://github.com/Breeze-xfr/FuckNoMCdownload.git
+3.将名为"HMCL-*.jar"的文件放入该目录
+4.运行HMCLStart.sh(此操作不会禁用更新，推荐):
+
+chmod +x HMCLStart.sh
+./HMCLStart.sh
+
+或直接运行FNMCD.sh(请注意，该操作会直接禁用HMCL的更新):
+
 chmod +x FNMCD.sh
 ./FNMCD.sh
-或直接(此操作不会禁用更新)
-chmod +x FNMCD.sh
-./HMCLStart.sh
-别寻思往文件夹里放很多个HMCL，这会启动很多个
+
+WARNING:别寻思往文件夹里放很多个HMCL，这会启动很多个
 ----
 Windows用户看这里
-请将名为"HMCL-<这里是版本号>.jar"的文件放入该目录
-并运行HMCLStart.bat
-别寻思往文件夹里放很多个HMCL，这会启动很多个
+1.打开CMD
+2.git clone https://github.com/Breeze-xfr/FuckNoMCdownload.git
+3.将名为"HMCL-<这里是版本号>.jar"的文件放入该目录
+4.运行HMCLStart.bat
+
+WARNING:别寻思往文件夹里放很多个HMCL，这会启动很多个
 ----
 请注意，这是对FNMCD.sh原理的解释:
 RegionUtils.class使用更改过的HMCL部分代码构成，使用这个.sh会将此传入HMCL-*.jar，然后更改下载页面，但这一操作会阻止HMCL更新
-这是对HMCLStart.sh原理的解释:
-它直接调用了-Dhmcl.region.override这一参数来启动HMCL，这不会影响HMCL更新(推荐)
+这是对HMCLStart.sh/HMCLStart.bat原理的解释:
+它直接调用了-Dhmcl.region.override这一参数来启动HMCL，这不会影响HMCL更新
 ----
 许可
 该项目遵循GPL v3进行分发
