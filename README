@@ -10,10 +10,12 @@ chmod +x FNMCD.sh
 或直接(此操作不会禁用更新)
 chmod +x FNMCD.sh
 ./HMCLStart.sh
+别寻思往文件夹里放很多个HMCL，这会启动很多个
 ----
 Windows用户看这里
 请将名为"HMCL-<这里是版本号>.jar"的文件放入该目录
 并运行HMCLStart.bat
+别寻思往文件夹里放很多个HMCL，这会启动很多个
 ----
 请注意，这是对FNMCD.sh原理的解释:
 RegionUtils.class使用更改过的HMCL部分代码构成，使用这个.sh会将此传入HMCL-*.jar，然后更改下载页面，但这一操作会阻止HMCL更新
